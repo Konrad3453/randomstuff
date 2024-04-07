@@ -18,7 +18,10 @@ def loadingbar():
         time.sleep(0.1)
         load(i+1, l, prefix=" Progress:", suffix="Complete:", length=l)
 
-
+def random_number():
+    min_range = int(input("min range: "))
+    max_range = int(input("max range: "))
+    print(f"random number between {min_range} and {max_range} is: {random.randint(min_range, max_range)}")
 
 
 
@@ -29,7 +32,10 @@ def loadingbar():
 #add cmd input here, programs above 
 option = int(input("""Select program:
 Loading bar: 1
+Random number: 2
 """))
 if option == 1:
     loadingbar()
+elif option == 2:
+    random_number()
 
